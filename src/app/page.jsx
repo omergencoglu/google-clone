@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Fragment>
       <HomeHeader />
-      <div className="flex flex-col items-center mt-24">
+      <main className="flex flex-col items-center mt-24 flex-grow">
         <Image
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png"
           alt="Google logo"
@@ -18,7 +18,7 @@ export default function Home() {
           priority
         />
         <HomeSearch />
-      </div>
+      </main>
     </Fragment>
   );
 }
