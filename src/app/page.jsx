@@ -15,6 +15,7 @@ export default function Home() {
           width={300}
           height={100}
           className="select-none"
+          priority
         />
         <HomeSearch />
       </div>
