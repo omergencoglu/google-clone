@@ -1,7 +1,6 @@
-import Footer from "@/components/Footer";
-import SearchHeader from "@/components/SearchHeader";
+import { Fragment } from "react";
 
-import "./../globals.css";
+import SearchHeader from "@/components/SearchHeader";
 
 export const metadata = {
   title: "Search Page - Google Clone",
@@ -10,12 +9,9 @@ export const metadata = {
 
 export default function SearchLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="flex flex-col min-h-screen">
-        <SearchHeader />
-        <main className="flex flex-col items-center flex-1">{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <Fragment>
+      <SearchHeader />
+      {children}
+    </Fragment>
   );
 }
