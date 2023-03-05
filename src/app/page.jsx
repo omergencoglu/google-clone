@@ -8,17 +8,15 @@ export default function Home() {
   return (
     <Fragment>
       <HomeHeader />
-      <main className="flex flex-col items-center mt-24 flex-grow">
-        <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png"
-          alt="Google logo"
-          width={300}
-          height={100}
-          className="select-none"
-          priority
-        />
-        <HomeSearch />
-      </main>
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png"
+        alt="Google logo"
+        width={300}
+        height={100}
+        className="select-none mt-44"
+        priority
+      />
+      <HomeSearch />
     </Fragment>
   );
 }

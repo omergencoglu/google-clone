@@ -1,16 +1,18 @@
 import Footer from "@/components/Footer";
+import SearchHeader from "@/components/SearchHeader";
 
-import "./globals.css";
+import "./../globals.css";
 
 export const metadata = {
-  title: "Google Clone",
-  description: "Google search engine clone created by Next.js 13.",
+  title: "Search Page - Google Clone",
+  description: "Search page of Google clone.",
 };
 
-export default function RootLayout({ children }) {
+export default function SearchLayout({ children }) {
   return (
     <html lang="en">
       <body className="flex flex-col h-screen">
+        <SearchHeader />
         <main className="flex flex-col items-center flex-grow">{children}</main>
         <Footer />
       </body>
