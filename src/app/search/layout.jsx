@@ -11,9 +11,9 @@ export const metadata = {
 export default function SearchLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-screen">
+      <body className="flex flex-col min-h-screen">
         <SearchHeader />
-        <main className="flex flex-col items-center flex-grow">{children}</main>
+        <main className="flex flex-col items-center flex-1">{children}</main>
         <Footer />
       </body>
     </html>
