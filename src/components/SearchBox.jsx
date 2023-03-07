@@ -6,7 +6,6 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { RxCross2 } from "react-icons/rx";
 import { BsFillMicFill } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai";
-import { TfiLayoutLineSolid } from "react-icons/tfi";
 
 export default function SearchBox() {
   const searchParams = useSearchParams();
@@ -27,7 +26,7 @@ export default function SearchBox() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center gap-x-4"
+      className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-2xl items-center gap-x-4"
     >
       <input
         type="text"
