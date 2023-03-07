@@ -1,3 +1,11 @@
+import { AiOutlineSearch } from "react-icons/ai";
+
 export default function SearchHeaderOptions() {
-  return <div>SearchHeaderOptions</div>;
+  return (
+    <div>
+      <div>
+        <AiOutlineSearch />
+      </div>
+    </div>
+  );
 }
