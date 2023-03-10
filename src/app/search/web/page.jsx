@@ -1,10 +1,15 @@
+export const dynamic = "force-dynamic";
+
 import { Fragment } from "react";
 import { Link } from "next/link";
+
+import WebSearchResults from "@/components/WebSearchResults";
 
 const API_KEY = process.env.API_KEY;
 const CONTEXT_KEY = process.env.CONTEXT_KEY;
 
 export default async function WebSearchPage({ searchParams }) {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   const response = await fetch(
     `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${searchParams.searchTerm}`
   );
@@ -31,9 +36,5 @@ export default async function WebSearchPage({ searchParams }) {
     );
   }
 
-  return (
-    <Fragment>
-      {results && results.map((result) => <h1>{result.title}</h1>)}
-    </Fragment>
-  );
+  return <Fragment>{results && <WebSearchResults results={data} />}</Fragment>;
 }
