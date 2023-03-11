@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://www.google.com/" target="_blank">Movie Center</a></h1>
+<h1 align="center"><a href="https://google-clone-omergencoglu.vercel.app/" target="_blank">Google Clone</a></h1>
 
 <h2 align="center">
     <a href="https://omergencoglu.dev/" target="_blank">Omer Gencoglu</a>
@@ -29,4 +29,4 @@ This project was built using these technologies;
 
 **📱 Fully Responsive**
 
-#### Check out <a href="https://www.google.com/" target="_blank">Google CLone</a>.
+#### Check out <a href="https://google-clone-omergencoglu.vercel.app/" target="_blank">Google CLone</a>.
