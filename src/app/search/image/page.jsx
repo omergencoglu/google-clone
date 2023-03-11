@@ -9,9 +9,10 @@ const API_KEY = process.env.API_KEY;
 const CONTEXT_KEY = process.env.CONTEXT_KEY;
 
 export default async function ImageSearchPage({ searchParams }) {
+  const startIndex = searchParams.start || "1";
   await new Promise((resolve) => setTimeout(resolve, 2000));
   const response = await fetch(
-    `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`
+    `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}`
   );
 
   if (!response.ok) {
